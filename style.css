@@ -1,0 +1,231 @@
+/*
+ *
+ * a:link    {color:#00ff00; background-color:transparent; text-decoration:none}
+ *
+ * a:visited {color:#00cc00; background-color:transparent; text-decoration:none}
+ *
+ */
+
+body { 
+    font-family: 'Play', sans-serif;
+    margin: 0;
+}
+
+.about-container {
+    background: url(images/bg-code.jpg) no-repeat 100% center fixed;
+    height:                  675px;
+    width:                   100%;
+    margin-bottom:           80px;
+    -webkit-background-size: cover;
+    -moz-background-size:    cover;
+    -o-background-size:      cover;
+    background-size:         cover;
+}
+
+.about {
+    #float:         left;
+    width:         400px;
+    height:        675px;
+    margin-left:   800px;
+    text-align:    center;
+    margin-top:    auto;
+}
+
+h1 {
+    color:         #ffffff;
+    font-size:     50px;
+    font-weight:   normal;
+    margin-top:    10px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    color:      #00ff00;
+    font-size:  20px;
+    margin-top: 0px;
+}
+
+.powered-by-h3 {
+    color:      #00ff00;
+    font-size:  12px;
+    text-align: center;
+}
+
+.snippets-h3 {
+    font-size:   28px;
+    text-align:  center;
+    font-weight: normal;
+    margin-top:  auto;
+}
+
+.web-apps-h3 {
+    font-size:   28px;
+    text-align:  center;
+    font-weight: normal;
+    margin-top:  auto;
+}
+
+.skills-tools-h3 {
+    font-size:   28px;
+    text-align:  center;
+    font-weight: normal;
+    margin-top:  auto;
+}
+
+.snippets-h4 {
+    text-align: center;
+    font-size:  24px;
+}
+
+.web-apps-h4 {
+    text-align: center;
+    font-size:  24px;
+}
+
+.web-apps-p {
+    max-width:  500px;
+    #text-align: center;
+    margin:     30px auto;
+}
+
+.skills-tools-p {
+    max-width:   400px;
+    font-size:   16px;
+    font-weight: normal;
+    text-align:  center;
+    margin:      40px auto;
+}
+
+.skills-tools-icons {
+    margin-right: auto;
+    margin-left:  auto;
+    text-align:   center;
+}
+
+.bio {
+    color:        #ffffff;
+    font-size:    16px;
+    font-weight:  normal;
+}
+
+.synopsis {
+    text-align: center;
+}
+
+.currently {
+    color:       #ffffff;
+    font-size:   16px;
+    font-weight: normal;
+}
+
+.me {
+    height:        150px;
+    width:         150px;
+    border-radius: 100%;
+    margin-top:    38px;
+}
+
+.grey-1 {
+    background-color: #919191;
+    height:           3px;
+    width:            50px;
+    border:           none;
+}
+
+.grey-2 {
+    background-color: #919191;
+    height:           3px;
+    width:            250px;
+    border:           none;
+}
+
+.powered-by-div {
+    width:         400px;
+    height:        100px;
+    margin-top:    40px;
+}
+
+.badge-linode {
+    height:        50px;
+    width:         50px;
+    margin-left:   0px;
+}
+
+.badge-archlinux {
+    height:        50px;
+    width:         50px;
+    margin-left:   50px;
+}
+
+.badge-lighttpd {
+    height:        50px;
+    width:         50px;
+    margin-left:   50px
+}
+
+.box {
+    float:            left;
+    background-color: #AAA;
+    margin-left:      5%;
+    margin-bottom:    5%;
+    margin-top:       5%;
+    width:            42.5%;
+    height:           600px;
+}
+
+.clear {
+    clear: both;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.st-icon {
+    margin: 30px 0;
+}
+
+.contact-me {
+    height:           350px;
+    background-color: #202020;
+    padding-top:      30px;
+    margin-top:       80px;
+    margin-left:      100px;
+    margin-right:     100px;
+}
+
+.contact-headline {
+    color:      white;
+    text-align: center;
+}
+
+.contact-info {
+    color:      white;
+    font-size:  13px;
+    text-align: center;
+    margin-top: 30px
+}
+
+.contact-link-p {
+    text-align: center;
+}
+
+.contact-link {
+    color:            white;
+    font-weight:      bold;
+    font-size:        13px;
+    background-color: transparent;
+    text-decoration:  none;    
+}
+
+.nav-link {
+    color:           white;
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+#    font-size: 12px;
+    width:     200px;
+}
+

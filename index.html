@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+    <title>Elijah Beale</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="prism/prism.css"
+      type="text/css"
+      media="screen"
+      />
+
+    <script type="text/javascript" src="prism/prism.js"></script>
+    
+  </head>
+
+  <body>
+    <div class="about-container">
+
+      <ul>
+        <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#" class="nav-link">Code Samples</a></li>
+        <li><a href="#" class="nav-link">Web Apps</a></li>
+        <li><a href="#" class="nav-link">Skills &amp; Tools</a></li>
+        <li><a href="#" class="nav-link">Hire Me</a></li>
+      </ul>
+      
+      <div class="about">
+        
+        <img src="images/me-fudo.jpg" class="me" />
+
+        <h1>Elijah Beale</h1>
+
+        <!-- This looks horrible, but I don't know a better way... -->
+        <h2>
+          {<a href="https://en.wikipedia.org/wiki/System_administrator" target="_blank" class="sysadmin">Sys</a>,
+          <a href="https://en.wikipedia.org/wiki/Network_administrator" target="_blank" class="netadmin">Net</a>}Admin
+        </h2>
+
+        <hr class="grey-1"/>
+
+        <p class="bio">
+          Elijah is a full-time system and network administrator at
+          The Philadelphia School, a pre-kindergarten through 8th grade private school that
+          emphasizes community relations, individual learning, and social responsibility.
+          Previously he was part-time helpdesk support for the same school.
+
+          <div class="currently">
+            Elijah is currently learning to code at
+
+            <a href="https://www.thefirehoseproject.com/?home=true" target="_blank" class="firehose">
+              The Firehose Project.
+            </a>
+          </div>  
+
+        </p>
+
+        <hr class="grey-1"/>
+
+        <div class="powered-by-div">  
+          <h3 class="powered-by-h3">Powered by:</h3>
+
+          <a href="https://www.linode.com/linodes">
+            <img src="images/badge-linode.png"    target="_blank" class="badge-linode">
+          </a>
+
+          <a href="https://www.archlinux.org/">
+            <img src="images/badge-archlinux.png" target="_blank" class="badge-archlinux">
+          </a>
+
+          <a href="http://www.lighttpd.net/">
+            <img src="images/badge-lighttpd.png"  target="_blank" class="badge-lighttpd">
+          </a>
+          
+        </div>
+        
+      </div>
+    </div>
+    <h3 class="snippets-h3">Code Snippets</h3>
+
+    <hr class="grey-2">
+
+    <div class="box">
+      <h4 class="snippets-h4">Temperature Conversion</h4>
+      <p class="synopsis">
+        This ruby program will prompt the user for a temperature 
+        in degrees Celsius and let the user know what the 
+        corresponding temperature is in Fahrenheit.
+      </p>
+    </div>
+
+    <div class="box">
+      <!-- !!! C2f -->
+      <pre class="line-numbers"><code class="language-ruby">
+prompt = 'Enter the Celcius temprature you'\
+'wish to convert to Farenheit:'
+
+puts prompts
+
+temp_c = gets.to_f
+
+def c2f(celcius)
+farenheit = celcius * 1.8 + 32
+temp_msg = '#{celcius} degrees Celcius is'\
+'#{farenheit} degrees Farenheit.'
+puts temp_msg
+end
+
+c2f(temp_c)
+      </code></pre>
+
+    </div>
+
+    <br class="clear"/>
+
+    <div class="box">
+      <!-- !!! GET ORDINAL -->
+      <pre class="line-numbers"><code class="language-ruby">
+puts &quot;Enter a number:&quot;
+
+number = gets.to_i
+
+def get_ordinal(num)
+
+  right_ten = num % 10
+  right_hun = num % 100
+  num_msg = &quot;That's the #{num}&quot;
+  num_msg_th = num_msg + &quot;th item!&quot;
+
+  puts case right_hun
+       when right_hun = 11, \
+            right_hun = 12, \
+            right_hun = 13
+         num_msg_th
+       else
+         case right_ten
+         when right_ten = 1 then num_msg + &quot;st item&quot;
+         when right_ten = 2 then num_msg + &quot;nd item&quot;
+         when right_ten = 3 then num_msg + &quot;rd item&quot;
+         else
+           num_msg_th         
+         end
+       end
+end
+
+get_ordinal(number)
+      </pre></code>
+
+    </div>
+
+    <div class="box">
+      <h4 class="snippets-h4">Ordinal Challenge</h4>
+      <p class="synopsis">
+        This ruby program will convert a plain number
+        to the ordinal of the number. So for example,
+        if the user enters 2, it will display 2nd, if
+        the user enters 3, it will display 3rd, etc.
+      </p>
+    </div>
+
+    <br class="clear"/>
+
+    <div class="box">
+      <h4 class="snippets-h4">Foobar</h4>
+      <p class="synopsis">
+        This ruby program is an adaptation of a classic technical 
+        interview problem which displays sequences 
+        of the Foobar pattern.
+      </p>
+    </div>
+    <div class="box">
+      <!-- !!! FOOBAR -->
+      <pre class="line-numbers"><code class="language-ruby">
+puts &quot;Please enter a number:&quot;
+input = gets.to_i
+
+def foobar(number)
+
+  (1..number).each do |c|    
+    puts case 
+         when (c % 3 == 0 &amp;&amp; c % 5 == 0)
+           &quot;FooBar&quot;
+         when c % 3 == 0
+           &quot;Foo&quot;
+         when c % 5 == 0
+           &quot;Bar&quot;
+         else
+           &quot;#{c}&quot;
+         end
+  end
+end
+
+foobar(input)
+      </pre></code>
+    </div>
+
+    <br class="clear"/>
+
+    <h3 class="web-apps-h3">Web Apps</h3>
+    <hr class="grey-2">
+
+    <div class="box">
+      <h4 class="web-apps-h4">Quote Generator</h4>
+      <img src="images/app-screenshots/splurty.png" class="full-width">
+      <p class="web-apps-p">
+        A database-powered quote generator with a mobile-first
+        design, using the Ruby on Rails framework, HTML, and CSS.
+        Uses Git and GitHub for version control, and launched
+        on Heroku.
+      </p>   
+    </div>
+
+    <div class="box">
+      <h4 class="web-apps-h4">Yelp Clone</h4>
+      <img src="images/app-screenshots/nomster.png" class="full-width">
+      <p>
+        A Yelp clone that integrates with the Google Maps API 
+        and includes features like user comments, star ratings,
+        image uploading, and user authentication.
+      </p>   
+    </div>
+
+    <div class="box">
+      <h4 class="web-apps-h4">Two-Sided Market Place</h4>
+      <img src="images/app-screenshots/flixter.png" class="full-width">
+      <p class="web-apps-p">
+        A two-sided, video-streaming marketplace platform that
+        features credit card payment capabilities, user role
+        management, complex user interfaces, and advanced
+        database relationships.
+      </p>   
+    </div>
+
+    <div class="box">
+      <h4 class="web-apps-h4">Test Driven Development</h4>
+      <img src="images/app-screenshots/grammable.png" class="full-width">
+      <p class="web-apps-p">
+        An Instagram clone that was built using industry-standard, test-driven
+        development following numerous red/green/refactor cycles.
+      </p>   
+    </div>
+
+    <div class="box">
+      <h4 class="web-apps-h4">Single Page Todo Application</h4>
+      <img src="images/app-screenshots/todoster.png" class="full-width">
+      <p class="web-apps-p">
+        This single-page to-do application features a
+        fluid user interface that– by using JavaScript–
+        allows users to rapidly add dynamic content.
+      </p>   
+    </div>
+
+    <div class="box">
+      <h4 class="web-apps-h4">Agile Team Project</h4>
+      <img src="images/app-screenshots/chess.png" class="full-width">
+      <p class="web-apps-p">
+        Worked on an Agile software development team building
+        a chess application. Under the guidance of a senior software engineer,
+        we had weekly Agile team meetings for code reviews, sprint planning,
+        and feature assignments.
+      </p>   
+    </div>
+    
+    <br class="clear">
+
+    <h3 class="skills-tools-h3">Skills &amp; Tools</h3>
+
+    <hr class="grey-2">
+
+    <p class="skills-tools-p">
+      Elijah has developed proficiency and expertise 
+      in the following programming languages and 
+      comfort with the following tools.
+    </p>
+
+    <div class="skills-tools-icons">
+      <img src="images/skills-and-tools/github.png"  class="st-icon">
+      <img src="images/skills-and-tools/rubocop.png" class="st-icon">
+      <img src="images/skills-and-tools/trello.png"  class="st-icon">
+      <img src="images/skills-and-tools/slack.png"   class="st-icon">
+
+      <br class="clear">
+
+      <img src="images/skills-and-tools/skills.png">
+    </div>
+    
+    <div class="contact-me">
+      <h3 class="contact-headline">Contact</h3>
+
+      <hr class="grey-2">
+
+      <p class="contact-info">
+        Currently entertaining new opportunities.
+        Please get in touch via email:
+      </p>
+
+      <p class="contact-link-p">
+        <a href="mailto:elijahthomasbeale@gmail.com" class="contact-link">
+          elijah.thomas.beale@gmail.com
+        </a>
+      </p>
+    </div>
+  </body>
+</html>
